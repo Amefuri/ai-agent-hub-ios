@@ -1,0 +1,63 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+
+# SwiftPM
+/.build/
+/Packages/
+/Package.resolved
+.swiftpm/
+
+# Carthage
+Carthage/Build/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+*.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Archives
+*.xcarchive
+
+# App data
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# CoreData
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Bundler
+.bundle/
+
+# Logs
+*.log
+
+# SwiftLint
+.swiftlint.yml
+
+# Misc
+.DS_Store
+*.swp
+
+# Unit Tests
+codecov.yml
