@@ -16,7 +16,7 @@
 		72C1FF642DB3EBDB007BE749 /* HomeDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF502DB3EBDB007BE749 /* HomeDIContainer.swift */; };
 		72C1FF652DB3EBDB007BE749 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF522DB3EBDB007BE749 /* HomeModel.swift */; };
 		72C1FF662DB3EBDB007BE749 /* AgentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF542DB3EBDB007BE749 /* AgentRepository.swift */; };
-		72C1FF672DB3EBDB007BE749 /* FetchFeaturedAgentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF562DB3EBDB007BE749 /* FetchFeaturedAgentsUseCase.swift */; };
+		72C1FF672DB3EBDB007BE749 /* FetchAgentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF562DB3EBDB007BE749 /* FetchAgentsUseCase.swift */; };
 		72C1FF682DB3EBDB007BE749 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF582DB3EBDB007BE749 /* HomeView.swift */; };
 		72C1FF692DB3EBDB007BE749 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF5A2DB3EBDB007BE749 /* HomeViewModel.swift */; };
 		72C1FF6B2DB3EBDB007BE749 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C1FF5F2DB3EBDB007BE749 /* Assets.xcassets */; };
@@ -28,6 +28,8 @@
 		72C1FF7D2DB3F276007BE749 /* AgentTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C1FF7C2DB3F26F007BE749 /* AgentTarget.swift */; };
 		72D964E02DB763AF00218435 /* PaginatedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D964DF2DB763A400218435 /* PaginatedResponse.swift */; };
 		72D964E52DB77B0800218435 /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D964E42DB77B0400218435 /* Paginated.swift */; };
+		72D964E82DB7AE2E00218435 /* FetchPopularAgentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D964E72DB7AE2600218435 /* FetchPopularAgentsUseCase.swift */; };
+		72D964E92DB7AF5400218435 /* FetchFeaturedAgentsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D964E62DB7AE1000218435 /* FetchFeaturedAgentsUseCase.swift */; };
 		80EBA34BB7892600248DF4BB /* Pods_AIAgentHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1678948E893B7D6CBC92B92E /* Pods_AIAgentHubTests.framework */; };
 		D960DFDE6FA3D8A5C7A233A7 /* Pods_AIAgentHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DFCED6F8316BA0311161EE /* Pods_AIAgentHub.framework */; };
 		F6C0C64FB556427D0CF675B5 /* Pods_AIAgentHub_AIAgentHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3421C6884BC7CF3DA9AA766E /* Pods_AIAgentHub_AIAgentHubUITests.framework */; };
@@ -67,7 +69,7 @@
 		72C1FF502DB3EBDB007BE749 /* HomeDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDIContainer.swift; sourceTree = "<group>"; };
 		72C1FF522DB3EBDB007BE749 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		72C1FF542DB3EBDB007BE749 /* AgentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentRepository.swift; sourceTree = "<group>"; };
-		72C1FF562DB3EBDB007BE749 /* FetchFeaturedAgentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFeaturedAgentsUseCase.swift; sourceTree = "<group>"; };
+		72C1FF562DB3EBDB007BE749 /* FetchAgentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAgentsUseCase.swift; sourceTree = "<group>"; };
 		72C1FF582DB3EBDB007BE749 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		72C1FF5A2DB3EBDB007BE749 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		72C1FF5E2DB3EBDB007BE749 /* AIAgentHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AIAgentHub.entitlements; sourceTree = "<group>"; };
@@ -82,6 +84,8 @@
 		72C1FF7E2DB3FA74007BE749 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		72D964DF2DB763A400218435 /* PaginatedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedResponse.swift; sourceTree = "<group>"; };
 		72D964E42DB77B0400218435 /* Paginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
+		72D964E62DB7AE1000218435 /* FetchFeaturedAgentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFeaturedAgentsUseCase.swift; sourceTree = "<group>"; };
+		72D964E72DB7AE2600218435 /* FetchPopularAgentsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPopularAgentsUseCase.swift; sourceTree = "<group>"; };
 		88496FF1A38067B1C9ABE394 /* Pods-AIAgentHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIAgentHub.debug.xcconfig"; path = "Target Support Files/Pods-AIAgentHub/Pods-AIAgentHub.debug.xcconfig"; sourceTree = "<group>"; };
 		AA14B6470A617DABFA96E5DC /* Pods-AIAgentHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AIAgentHubTests.debug.xcconfig"; path = "Target Support Files/Pods-AIAgentHubTests/Pods-AIAgentHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B3DFCED6F8316BA0311161EE /* Pods_AIAgentHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AIAgentHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,7 +199,9 @@
 		72C1FF572DB3EBDB007BE749 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				72C1FF562DB3EBDB007BE749 /* FetchFeaturedAgentsUseCase.swift */,
+				72C1FF562DB3EBDB007BE749 /* FetchAgentsUseCase.swift */,
+				72D964E62DB7AE1000218435 /* FetchFeaturedAgentsUseCase.swift */,
+				72D964E72DB7AE2600218435 /* FetchPopularAgentsUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -597,8 +603,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D964E92DB7AF5400218435 /* FetchFeaturedAgentsUseCase.swift in Sources */,
 				72C1FF622DB3EBDB007BE749 /* AppDIContainer.swift in Sources */,
 				72AA0C772DB64B3D00761A94 /* FeatureAgentCarouselView.swift in Sources */,
+				72D964E82DB7AE2E00218435 /* FetchPopularAgentsUseCase.swift in Sources */,
 				72D964E52DB77B0800218435 /* Paginated.swift in Sources */,
 				72AA0C7B2DB653B200761A94 /* AgentCardView.swift in Sources */,
 				72C1FF632DB3EBDB007BE749 /* AgentHubMobileApp.swift in Sources */,
@@ -606,7 +614,7 @@
 				72C1FF652DB3EBDB007BE749 /* HomeModel.swift in Sources */,
 				72D964E02DB763AF00218435 /* PaginatedResponse.swift in Sources */,
 				72C1FF662DB3EBDB007BE749 /* AgentRepository.swift in Sources */,
-				72C1FF672DB3EBDB007BE749 /* FetchFeaturedAgentsUseCase.swift in Sources */,
+				72C1FF672DB3EBDB007BE749 /* FetchAgentsUseCase.swift in Sources */,
 				72C1FF7D2DB3F276007BE749 /* AgentTarget.swift in Sources */,
 				72C1FF682DB3EBDB007BE749 /* HomeView.swift in Sources */,
 				72AA0C792DB6536E00761A94 /* AgentSectionView.swift in Sources */,

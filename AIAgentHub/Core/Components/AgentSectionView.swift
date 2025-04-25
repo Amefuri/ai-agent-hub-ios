@@ -10,6 +10,7 @@ import SwiftUI
 struct AgentSectionView: View {
     let title: String
     let agents: [Agent]
+    let isLoadingMore: Bool
     let onScrolledToEnd: () -> Void
 
     var body: some View {
@@ -22,12 +23,13 @@ struct AgentSectionView: View {
             .padding(.horizontal)
 
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
+                LazyHStack(spacing: 12) {
                     ForEach(agents.indices, id: \ .self) { i in
                         let agent = agents[i]
                         AgentCardView(agent: agent)
                             .onAppear {
-                                if i == agents.count - 1 {
+                                print("onAppear of index \(i)")
+                                if i == agents.count - 1 && !isLoadingMore {
                                     onScrolledToEnd()
                                 }
                             }

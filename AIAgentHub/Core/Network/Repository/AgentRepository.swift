@@ -4,7 +4,9 @@ import Foundation
 import Moya
 
 protocol AgentRepository {
+    func fetchAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error>
     func fetchFeaturedAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error>
+    func fetchPopularAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error>
 }
 
 final class DefaultAgentRepository: AgentRepository {
@@ -18,16 +20,29 @@ final class DefaultAgentRepository: AgentRepository {
         return provider
     }()
     
-    
-    func fetchFeaturedAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error> {
+    func fetchAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error> {
         provider.requestPublisher(.fetchAgents(page: page, limit: limit))
             .map(\.data)
             .decode(type: PaginatedResponse<Agent>.self, decoder: JSONDecoder())
-            .map { Paginated(items: $0.data, hasMore: $0.hasMore) }
+            .map { Paginated(items: $0.data, hasMore: $0.hasMore, isLoading: false) }
             .eraseToAnyPublisher()
     }
     
+    func fetchFeaturedAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error> {
+        provider.requestPublisher(.fetchFeaturedAgents(page: page, limit: limit))
+            .map(\.data)
+            .decode(type: PaginatedResponse<Agent>.self, decoder: JSONDecoder())
+            .map { Paginated(items: $0.data, hasMore: $0.hasMore, isLoading: false) }
+            .eraseToAnyPublisher()
+    }
     
+    func fetchPopularAgents(page: Int, limit: Int) -> AnyPublisher<Paginated<Agent>, Error> {
+        provider.requestPublisher(.fetchPopularAgents(page: page, limit: limit))
+            .map(\.data)
+            .decode(type: PaginatedResponse<Agent>.self, decoder: JSONDecoder())
+            .map { Paginated(items: $0.data, hasMore: $0.hasMore, isLoading: false) }
+            .eraseToAnyPublisher()
+    }
     
 //    func fetchFeaturedAgents(page: Int, limit: Int) -> AnyPublisher<[Agent], Error> {
 //        provider.requestPublisher(.fetchAgents(page: page, limit: limit))

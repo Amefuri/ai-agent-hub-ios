@@ -8,4 +8,5 @@
 struct Paginated<T> {
     var items: [T]
     var hasMore: Bool
+    var isLoading: Bool
 }

@@ -14,24 +14,16 @@ struct FeatureAgentCarouselView: View {
     var body: some View {
         TabView {
             ForEach(agents) { agent in
-//                ZStack {
-//                    AsyncImage(url: agent.imageUrl) { image in
-//                        image.resizable()
-//                    } placeholder: {
-//                        Color.gray
-//                    }
-//                }
-                
-                ZStack {
-                    KFImage(agent.imageUrl)
-                        .resizable()
-                }
-                .aspectRatio(contentMode: .fill)
-                .cornerRadius(12)
-                .padding()
+                KFImage(agent.imageUrl)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 180) // Ensure fixed height
+                    .cornerRadius(12)
+                    .clipped() // Clip after corner radius
+                    .padding(.horizontal)
             }
         }
         .tabViewStyle(PageTabViewStyle())
-        .frame(height: 180)
+        .frame(height: 180) // Slightly more than image height if needed
     }
 }
